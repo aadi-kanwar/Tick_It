@@ -4,11 +4,14 @@ import Header from "./components/Header";
 import ToDoItem from "./components/ToDoItem";
 import Button from "./components/Button";
 
+import CounterComponent from "./components/CounterComponent";
+
 import "./style.css";
 
 const App = () => {
   return (
     <div className = "todo-container">
+      <CounterComponent />
       <Header title="Tick-It App" />
       <ToDoItem text="Eat" />
       <ToDoItem completed= {true} text="Code" />
